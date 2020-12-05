@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A46EB01C257B3E49009A0557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01B257B3E49009A0557 /* AppDelegate.swift */; };
+		A46EB01E257B3E49009A0557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01D257B3E49009A0557 /* SceneDelegate.swift */; };
+		A46EB020257B3E49009A0557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01F257B3E49009A0557 /* ViewController.swift */; };
+		A46EB023257B3E49009A0557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46EB021257B3E49009A0557 /* Main.storyboard */; };
+		A46EB025257B3E4B009A0557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46EB024257B3E4B009A0557 /* Assets.xcassets */; };
+		A46EB028257B3E4B009A0557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46EB026257B3E4B009A0557 /* LaunchScreen.storyboard */; };
+		A46EB033257B3E4B009A0557 /* grocermiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB032257B3E4B009A0557 /* grocermiTests.swift */; };
+		A46EB03E257B3E4B009A0557 /* grocermiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB03D257B3E4B009A0557 /* grocermiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A46EB02F257B3E4B009A0557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46EB010257B3E49009A0557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46EB017257B3E49009A0557;
+			remoteInfo = grocermi;
+		};
+		A46EB03A257B3E4B009A0557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46EB010257B3E49009A0557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46EB017257B3E49009A0557;
+			remoteInfo = grocermi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A46EB018257B3E49009A0557 /* grocermi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grocermi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46EB01B257B3E49009A0557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A46EB01D257B3E49009A0557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A46EB01F257B3E49009A0557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A46EB022257B3E49009A0557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A46EB024257B3E4B009A0557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A46EB027257B3E4B009A0557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A46EB029257B3E4B009A0557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46EB02E257B3E4B009A0557 /* grocermiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grocermiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46EB032257B3E4B009A0557 /* grocermiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grocermiTests.swift; sourceTree = "<group>"; };
+		A46EB034257B3E4B009A0557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46EB039257B3E4B009A0557 /* grocermiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grocermiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46EB03D257B3E4B009A0557 /* grocermiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grocermiUITests.swift; sourceTree = "<group>"; };
+		A46EB03F257B3E4B009A0557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A46EB015257B3E49009A0557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46EB02B257B3E4B009A0557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46EB036257B3E4B009A0557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A46EB00F257B3E49009A0557 = {
+			isa = PBXGroup;
+			children = (
+				A46EB01A257B3E49009A0557 /* grocermi */,
+				A46EB031257B3E4B009A0557 /* grocermiTests */,
+				A46EB03C257B3E4B009A0557 /* grocermiUITests */,
+				A46EB019257B3E49009A0557 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A46EB019257B3E49009A0557 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A46EB018257B3E49009A0557 /* grocermi.app */,
+				A46EB02E257B3E4B009A0557 /* grocermiTests.xctest */,
+				A46EB039257B3E4B009A0557 /* grocermiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A46EB01A257B3E49009A0557 /* grocermi */ = {
+			isa = PBXGroup;
+			children = (
+				A46EB01B257B3E49009A0557 /* AppDelegate.swift */,
+				A46EB01D257B3E49009A0557 /* SceneDelegate.swift */,
+				A46EB01F257B3E49009A0557 /* ViewController.swift */,
+				A46EB021257B3E49009A0557 /* Main.storyboard */,
+				A46EB024257B3E4B009A0557 /* Assets.xcassets */,
+				A46EB026257B3E4B009A0557 /* LaunchScreen.storyboard */,
+				A46EB029257B3E4B009A0557 /* Info.plist */,
+			);
+			path = grocermi;
+			sourceTree = "<group>";
+		};
+		A46EB031257B3E4B009A0557 /* grocermiTests */ = {
+			isa = PBXGroup;
+			children = (
+				A46EB032257B3E4B009A0557 /* grocermiTests.swift */,
+				A46EB034257B3E4B009A0557 /* Info.plist */,
+			);
+			path = grocermiTests;
+			sourceTree = "<group>";
+		};
+		A46EB03C257B3E4B009A0557 /* grocermiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A46EB03D257B3E4B009A0557 /* grocermiUITests.swift */,
+				A46EB03F257B3E4B009A0557 /* Info.plist */,
+			);
+			path = grocermiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A46EB017257B3E49009A0557 /* grocermi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46EB042257B3E4B009A0557 /* Build configuration list for PBXNativeTarget "grocermi" */;
+			buildPhases = (
+				A46EB014257B3E49009A0557 /* Sources */,
+				A46EB015257B3E49009A0557 /* Frameworks */,
+				A46EB016257B3E49009A0557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = grocermi;
+			productName = grocermi;
+			productReference = A46EB018257B3E49009A0557 /* grocermi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A46EB02D257B3E4B009A0557 /* grocermiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46EB045257B3E4B009A0557 /* Build configuration list for PBXNativeTarget "grocermiTests" */;
+			buildPhases = (
+				A46EB02A257B3E4B009A0557 /* Sources */,
+				A46EB02B257B3E4B009A0557 /* Frameworks */,
+				A46EB02C257B3E4B009A0557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46EB030257B3E4B009A0557 /* PBXTargetDependency */,
+			);
+			name = grocermiTests;
+			productName = grocermiTests;
+			productReference = A46EB02E257B3E4B009A0557 /* grocermiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A46EB038257B3E4B009A0557 /* grocermiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46EB048257B3E4B009A0557 /* Build configuration list for PBXNativeTarget "grocermiUITests" */;
+			buildPhases = (
+				A46EB035257B3E4B009A0557 /* Sources */,
+				A46EB036257B3E4B009A0557 /* Frameworks */,
+				A46EB037257B3E4B009A0557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46EB03B257B3E4B009A0557 /* PBXTargetDependency */,
+			);
+			name = grocermiUITests;
+			productName = grocermiUITests;
+			productReference = A46EB039257B3E4B009A0557 /* grocermiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A46EB010257B3E49009A0557 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					A46EB017257B3E49009A0557 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A46EB02D257B3E4B009A0557 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A46EB017257B3E49009A0557;
+					};
+					A46EB038257B3E4B009A0557 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A46EB017257B3E49009A0557;
+					};
+				};
+			};
+			buildConfigurationList = A46EB013257B3E49009A0557 /* Build configuration list for PBXProject "grocermi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A46EB00F257B3E49009A0557;
+			productRefGroup = A46EB019257B3E49009A0557 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A46EB017257B3E49009A0557 /* grocermi */,
+				A46EB02D257B3E4B009A0557 /* grocermiTests */,
+				A46EB038257B3E4B009A0557 /* grocermiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A46EB016257B3E49009A0557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46EB028257B3E4B009A0557 /* LaunchScreen.storyboard in Resources */,
+				A46EB025257B3E4B009A0557 /* Assets.xcassets in Resources */,
+				A46EB023257B3E49009A0557 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46EB02C257B3E4B009A0557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46EB037257B3E4B009A0557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A46EB014257B3E49009A0557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46EB020257B3E49009A0557 /* ViewController.swift in Sources */,
+				A46EB01C257B3E49009A0557 /* AppDelegate.swift in Sources */,
+				A46EB01E257B3E49009A0557 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46EB02A257B3E4B009A0557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46EB033257B3E4B009A0557 /* grocermiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46EB035257B3E4B009A0557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46EB03E257B3E4B009A0557 /* grocermiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A46EB030257B3E4B009A0557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46EB017257B3E49009A0557 /* grocermi */;
+			targetProxy = A46EB02F257B3E4B009A0557 /* PBXContainerItemProxy */;
+		};
+		A46EB03B257B3E4B009A0557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46EB017257B3E49009A0557 /* grocermi */;
+			targetProxy = A46EB03A257B3E4B009A0557 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A46EB021257B3E49009A0557 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A46EB022257B3E49009A0557 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A46EB026257B3E4B009A0557 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A46EB027257B3E4B009A0557 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A46EB040257B3E4B009A0557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A46EB041257B3E4B009A0557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A46EB043257B3E4B009A0557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = grocermi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.grocermi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A46EB044257B3E4B009A0557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = grocermi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.grocermi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A46EB046257B3E4B009A0557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = grocermiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.grocermiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grocermi.app/grocermi";
+			};
+			name = Debug;
+		};
+		A46EB047257B3E4B009A0557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = grocermiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.grocermiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grocermi.app/grocermi";
+			};
+			name = Release;
+		};
+		A46EB049257B3E4B009A0557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = grocermiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.grocermiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = grocermi;
+			};
+			name = Debug;
+		};
+		A46EB04A257B3E4B009A0557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = grocermiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.grocermiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = grocermi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A46EB013257B3E49009A0557 /* Build configuration list for PBXProject "grocermi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46EB040257B3E4B009A0557 /* Debug */,
+				A46EB041257B3E4B009A0557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46EB042257B3E4B009A0557 /* Build configuration list for PBXNativeTarget "grocermi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46EB043257B3E4B009A0557 /* Debug */,
+				A46EB044257B3E4B009A0557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46EB045257B3E4B009A0557 /* Build configuration list for PBXNativeTarget "grocermiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46EB046257B3E4B009A0557 /* Debug */,
+				A46EB047257B3E4B009A0557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46EB048257B3E4B009A0557 /* Build configuration list for PBXNativeTarget "grocermiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46EB049257B3E4B009A0557 /* Debug */,
+				A46EB04A257B3E4B009A0557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A46EB010257B3E49009A0557 /* Project object */;
+}
