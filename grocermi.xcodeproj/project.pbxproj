@@ -62,6 +62,7 @@
 		A46EB0AA257B3E71009A0557 /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A46EB07B257B3E71009A0557 /* SF-Pro-Display-BoldItalic.otf */; };
 		A46EB0AB257B3E71009A0557 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A46EB07C257B3E71009A0557 /* SF-Pro-Rounded-Bold.otf */; };
 		A46EB0AC257B3E71009A0557 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A46EB07D257B3E71009A0557 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		A4EE108E257B4281009257BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A4EE108D257B4281009257BB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		A46EB07B257B3E71009A0557 /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
 		A46EB07C257B3E71009A0557 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		A46EB07D257B3E71009A0557 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		A4EE108D257B4281009257BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		A46EB00F257B3E49009A0557 = {
 			isa = PBXGroup;
 			children = (
+				A4EE108D257B4281009257BB /* README.md */,
 				A46EB01A257B3E49009A0557 /* grocermi */,
 				A46EB031257B3E4B009A0557 /* grocermiTests */,
 				A46EB03C257B3E4B009A0557 /* grocermiUITests */,
@@ -425,6 +428,7 @@
 				A46EB09E257B3E71009A0557 /* SF-Pro-Display-BlackItalic.otf in Resources */,
 				A46EB07E257B3E71009A0557 /* SF-Pro-Italic.ttf in Resources */,
 				A46EB0AC257B3E71009A0557 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				A4EE108E257B4281009257BB /* README.md in Resources */,
 				A46EB090257B3E71009A0557 /* SF-Pro-Text-BlackItalic.otf in Resources */,
 				A46EB08B257B3E71009A0557 /* SF-Pro-Display-Medium.otf in Resources */,
 				A46EB0A3257B3E71009A0557 /* SF-Pro-Text-Semibold.otf in Resources */,
