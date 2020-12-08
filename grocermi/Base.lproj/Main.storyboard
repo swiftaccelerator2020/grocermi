@@ -40,21 +40,21 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
                                                     <color key="backgroundColor" red="0.30980392159999998" green="0.45882352939999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u7h-U2-faa">
-                                                        <size key="itemSize" width="150" height="207"/>
+                                                        <size key="itemSize" width="156" height="203"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Clu-Pl-ppg">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="207"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="156" height="203"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ik3-5c-CiW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="207"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="156" height="203"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                             </collectionViewCellContentView>
                                                             <color key="backgroundColor" red="0.30980392159999998" green="0.45882352939999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <size key="customSize" width="150" height="207"/>
+                                                            <size key="customSize" width="156" height="203"/>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
@@ -90,14 +90,12 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="plus" catalog="system" id="F1g-qd-uyw">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <segue destination="xwM-P2-vki" kind="presentation" id="8Fi-h4-5Ge"/>
-                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <segue destination="Mie-fu-fbj" kind="show" id="3Df-u0-JHW"/>
+                        <segue destination="xwM-P2-vki" kind="presentation" id="74Y-8L-hPt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -148,7 +146,7 @@
         <!--Shopping Preview-->
         <scene sceneID="KPV-R9-AQR">
             <objects>
-                <viewController id="jHE-FD-6Ot" sceneMemberID="viewController">
+                <viewController id="jHE-FD-6Ot" customClass="ShoppingListViewController" customModule="grocermi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lg8-Wh-EkE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,6 +163,9 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <segue destination="TF5-Tg-J5k" kind="presentation" id="mo7-x4-9EY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWR-ln-bCa" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="926" y="776"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Object From Home View Controller-->
         <scene sceneID="r6I-4v-xrw">
             <objects>
-                <viewController id="xwM-P2-vki" sceneMemberID="viewController">
+                <viewController id="xwM-P2-vki" customClass="AddObjectFromHomeViewController" customModule="grocermi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2yi-sN-BCc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,12 +207,16 @@
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-oe-v3n">
                                         <rect key="frame" x="70" y="20" width="274" height="274"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fwA-oe-v3n" secondAttribute="height" id="xqy-VQ-ujK"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="qvH-ao-zwU" appends="YES" id="mUL-AH-FLi"/>
+                                        </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="g4O-ZD-Q5g">
-                                        <rect key="frame" x="15" y="304" width="384" height="364.33333333333326"/>
+                                        <rect key="frame" x="15" y="304" width="384" height="318"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ama-Aw-M3M">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="20.333333333333332"/>
@@ -267,21 +272,23 @@
                                                     <constraint firstAttribute="height" constant="50" id="fkv-X9-CBz"/>
                                                 </constraints>
                                             </datePicker>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7P-QE-n6v">
-                                                <rect key="frame" x="0.0" y="252.00000000000003" width="384" height="20.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPd-zU-Pk8">
-                                                <rect key="frame" x="0.0" y="278.33333333333337" width="384" height="50"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="67m-6y-tiw"/>
-                                                </constraints>
-                                            </pickerView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="tdi-rA-9bz">
+                                                <rect key="frame" x="0.0" y="252" width="279.66666666666669" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz7-1m-1Z0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHi-FJ-92x">
+                                                        <rect key="frame" x="154.66666666666666" y="0.0" width="124.99999999999997" height="30"/>
+                                                        <state key="normal" title="Select a categroty"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UO1-Qs-Ip8">
-                                                <rect key="frame" x="0.0" y="334.33333333333337" width="384" height="30"/>
+                                                <rect key="frame" x="0.0" y="288" width="384" height="30"/>
                                                 <color key="backgroundColor" red="0.57424086330000002" green="0.78922331329999995" blue="0.69410890339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Done">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -290,18 +297,14 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Pfg-l7-ift" secondAttribute="trailing" id="3v5-XG-qee"/>
-                                            <constraint firstItem="K7P-QE-n6v" firstAttribute="leading" secondItem="g4O-ZD-Q5g" secondAttribute="leading" id="9N5-e8-gM8"/>
                                             <constraint firstAttribute="trailing" secondItem="jhc-gm-CWI" secondAttribute="trailing" id="9yS-nG-ktu"/>
                                             <constraint firstItem="Pfg-l7-ift" firstAttribute="leading" secondItem="g4O-ZD-Q5g" secondAttribute="leading" id="GxL-a4-V1D"/>
                                             <constraint firstItem="W20-Ig-Swn" firstAttribute="leading" secondItem="g4O-ZD-Q5g" secondAttribute="leading" id="MIo-92-jKJ"/>
                                             <constraint firstAttribute="trailing" secondItem="UO1-Qs-Ip8" secondAttribute="trailing" id="Nyw-uZ-itF"/>
-                                            <constraint firstAttribute="trailing" secondItem="rPd-zU-Pk8" secondAttribute="trailing" id="Roi-J6-Eqp"/>
                                             <constraint firstAttribute="trailing" secondItem="BPm-ND-OkL" secondAttribute="trailing" id="XH3-CC-Ajw"/>
                                             <constraint firstItem="X8H-1R-FU5" firstAttribute="leading" secondItem="g4O-ZD-Q5g" secondAttribute="leading" id="XQx-Z4-fhC"/>
-                                            <constraint firstItem="rPd-zU-Pk8" firstAttribute="leading" secondItem="g4O-ZD-Q5g" secondAttribute="leading" id="br9-io-mKg"/>
                                             <constraint firstAttribute="trailing" secondItem="Hb3-Tt-wpU" secondAttribute="trailing" id="cf3-E6-Eg2"/>
                                             <constraint firstAttribute="trailing" secondItem="ama-Aw-M3M" secondAttribute="trailing" id="epm-gz-R0L"/>
-                                            <constraint firstAttribute="trailing" secondItem="K7P-QE-n6v" secondAttribute="trailing" id="g7k-es-rXQ"/>
                                             <constraint firstItem="BPm-ND-OkL" firstAttribute="leading" secondItem="g4O-ZD-Q5g" secondAttribute="leading" id="iMP-LZ-qBz"/>
                                             <constraint firstItem="UO1-Qs-Ip8" firstAttribute="leading" secondItem="g4O-ZD-Q5g" secondAttribute="leading" id="mA6-o1-p0V"/>
                                             <constraint firstItem="Hb3-Tt-wpU" firstAttribute="leading" secondItem="g4O-ZD-Q5g" secondAttribute="leading" id="oGE-P9-B6Q"/>
@@ -359,13 +362,14 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="bEx-OG-HrG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Us2-Fd-8ns" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qvH-ao-zwU"/>
             </objects>
             <point key="canvasLocation" x="2801" y="76"/>
         </scene>
         <!--name-->
         <scene sceneID="9gW-9E-2se">
             <objects>
-                <viewController id="Mie-fu-fbj" sceneMemberID="viewController">
+                <viewController id="Mie-fu-fbj" customClass="DetailsViewController" customModule="grocermi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9mG-NA-bWA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -437,19 +441,19 @@
             </objects>
             <point key="canvasLocation" x="3687" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Object From Shopping View Controller-->
         <scene sceneID="At9-hU-lhb">
             <objects>
-                <viewController id="TF5-Tg-J5k" sceneMemberID="viewController">
+                <viewController id="TF5-Tg-J5k" customClass="AddObjectFromShoppingViewController" customModule="grocermi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e3Y-a5-gBE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tc-c9-XbU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="660"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHb-mM-NsV">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="660"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="gxF-Od-zaZ">
                                                 <rect key="frame" x="20" y="10" width="374" height="317"/>
@@ -476,7 +480,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name of grocery item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PHM-iC-vvA">
-                                                        <rect key="frame" x="0.0" y="62.333333333333329" width="374" height="34"/>
+                                                        <rect key="frame" x="0.0" y="62.333333333333343" width="374" height="34"/>
                                                         <color key="backgroundColor" red="0.1789057436" green="0.36177668039999999" blue="0.50329156090000005" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -507,17 +511,17 @@
                                                         </constraints>
                                                     </datePicker>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="EtX-Um-siR">
-                                                        <rect key="frame" x="0.0" y="251" width="196" height="30"/>
+                                                        <rect key="frame" x="0.0" y="251" width="279.66666666666669" height="30"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery Catefory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkl-yf-TS8">
-                                                                <rect key="frame" x="0.0" y="0.0" width="137" height="30"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkl-yf-TS8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="141.66666666666666" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s31-z7-avZ">
-                                                                <rect key="frame" x="150" y="0.0" width="46" height="30"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="154.66666666666666" y="0.0" width="124.99999999999997" height="30"/>
+                                                                <state key="normal" title="Select a categroty"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -565,7 +569,7 @@
                                 </constraints>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEO-lf-hAr">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <color key="barTintColor" red="0.28211733700000002" green="0.45617026090000001" blue="0.6235521436" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="Add Object" id="Z9F-7Q-K3e">
