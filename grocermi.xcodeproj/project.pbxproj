@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		A46EB01C257B3E49009A0557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01B257B3E49009A0557 /* AppDelegate.swift */; };
 		A46EB01E257B3E49009A0557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01D257B3E49009A0557 /* SceneDelegate.swift */; };
 		A46EB020257B3E49009A0557 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01F257B3E49009A0557 /* ViewController.swift */; };
@@ -15,6 +16,25 @@
 		A46EB028257B3E4B009A0557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46EB026257B3E4B009A0557 /* LaunchScreen.storyboard */; };
 		A46EB033257B3E4B009A0557 /* grocermiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB032257B3E4B009A0557 /* grocermiTests.swift */; };
 		A46EB03E257B3E4B009A0557 /* grocermiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB03D257B3E4B009A0557 /* grocermiUITests.swift */; };
+=======
+		8A76BB30257FA99500B0248B /* AddObjectFromHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76BB2F257FA99500B0248B /* AddObjectFromHomeViewController.swift */; };
+		8A76BB35257FA99E00B0248B /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76BB34257FA99E00B0248B /* ShoppingListViewController.swift */; };
+		8A76BB3A257FA9C800B0248B /* AddObjectFromShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76BB39257FA9C800B0248B /* AddObjectFromShoppingViewController.swift */; };
+		8A76BB3F257FA9E600B0248B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76BB3E257FA9E600B0248B /* DetailsViewController.swift */; };
+		8A76BB4A257FAA7900B0248B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76BB49257FAA7900B0248B /* WidgetKit.framework */; };
+		8A76BB4C257FAA7900B0248B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76BB4B257FAA7900B0248B /* SwiftUI.framework */; };
+		8A76BB4F257FAA7900B0248B /* GrocermiWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76BB4E257FAA7900B0248B /* GrocermiWidgetExtension.swift */; };
+		8A76BB52257FAA7D00B0248B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A76BB51257FAA7D00B0248B /* Assets.xcassets */; };
+		8A76BB54257FAA7D00B0248B /* GrocermiWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8A76BB50257FAA7900B0248B /* GrocermiWidgetExtension.intentdefinition */; };
+		8A76BB55257FAA7D00B0248B /* GrocermiWidgetExtension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8A76BB50257FAA7900B0248B /* GrocermiWidgetExtension.intentdefinition */; };
+		8A76BB58257FAA7D00B0248B /* GrocermiWidgetExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A76BB47257FAA7900B0248B /* GrocermiWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A46EB01C257B3E49009A0557 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01B257B3E49009A0557 /* AppDelegate.swift */; };
+		A46EB01E257B3E49009A0557 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01D257B3E49009A0557 /* SceneDelegate.swift */; };
+		A46EB020257B3E49009A0557 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46EB01F257B3E49009A0557 /* HomeViewController.swift */; };
+		A46EB023257B3E49009A0557 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46EB021257B3E49009A0557 /* Main.storyboard */; };
+		A46EB025257B3E4B009A0557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46EB024257B3E4B009A0557 /* Assets.xcassets */; };
+		A46EB028257B3E4B009A0557 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46EB026257B3E4B009A0557 /* LaunchScreen.storyboard */; };
+>>>>>>> origin/joshua
 		A46EB07E257B3E71009A0557 /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A46EB04F257B3E71009A0557 /* SF-Pro-Italic.ttf */; };
 		A46EB07F257B3E71009A0557 /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A46EB050257B3E71009A0557 /* SF-Pro-Display-Thin.otf */; };
 		A46EB080257B3E71009A0557 /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A46EB051257B3E71009A0557 /* SF-Pro-Display-SemiboldItalic.otf */; };
@@ -66,6 +86,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+<<<<<<< HEAD
+=======
+		8A76BB56257FAA7D00B0248B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46EB010257B3E49009A0557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A76BB46257FAA7900B0248B;
+			remoteInfo = GrocermiWidgetExtensionExtension;
+		};
+>>>>>>> origin/joshua
 		A46EB02F257B3E4B009A0557 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A46EB010257B3E49009A0557 /* Project object */;
@@ -82,21 +112,60 @@
 		};
 /* End PBXContainerItemProxy section */
 
+<<<<<<< HEAD
 /* Begin PBXFileReference section */
 		A46EB018257B3E49009A0557 /* grocermi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grocermi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46EB01B257B3E49009A0557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A46EB01D257B3E49009A0557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A46EB01F257B3E49009A0557 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+=======
+/* Begin PBXCopyFilesBuildPhase section */
+		8A76BB5C257FAA7D00B0248B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A76BB58257FAA7D00B0248B /* GrocermiWidgetExtensionExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A76BB2F257FA99500B0248B /* AddObjectFromHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddObjectFromHomeViewController.swift; sourceTree = "<group>"; };
+		8A76BB34257FA99E00B0248B /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		8A76BB39257FA9C800B0248B /* AddObjectFromShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddObjectFromShoppingViewController.swift; sourceTree = "<group>"; };
+		8A76BB3E257FA9E600B0248B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		8A76BB47257FAA7900B0248B /* GrocermiWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GrocermiWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A76BB49257FAA7900B0248B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8A76BB4B257FAA7900B0248B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8A76BB4E257FAA7900B0248B /* GrocermiWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrocermiWidgetExtension.swift; sourceTree = "<group>"; };
+		8A76BB50257FAA7900B0248B /* GrocermiWidgetExtension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GrocermiWidgetExtension.intentdefinition; sourceTree = "<group>"; };
+		8A76BB51257FAA7D00B0248B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A76BB53257FAA7D00B0248B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A76BB61257FAAB900B0248B /* grocermi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = grocermi.entitlements; sourceTree = "<group>"; };
+		8A76BB76257FAB6600B0248B /* GrocermiWidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrocermiWidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
+		A46EB018257B3E49009A0557 /* grocermi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grocermi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46EB01B257B3E49009A0557 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A46EB01D257B3E49009A0557 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A46EB01F257B3E49009A0557 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+>>>>>>> origin/joshua
 		A46EB022257B3E49009A0557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A46EB024257B3E4B009A0557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46EB027257B3E4B009A0557 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A46EB029257B3E4B009A0557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A46EB02E257B3E4B009A0557 /* grocermiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grocermiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+<<<<<<< HEAD
 		A46EB032257B3E4B009A0557 /* grocermiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grocermiTests.swift; sourceTree = "<group>"; };
 		A46EB034257B3E4B009A0557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A46EB039257B3E4B009A0557 /* grocermiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grocermiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46EB03D257B3E4B009A0557 /* grocermiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grocermiUITests.swift; sourceTree = "<group>"; };
 		A46EB03F257B3E4B009A0557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+=======
+		A46EB039257B3E4B009A0557 /* grocermiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grocermiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+>>>>>>> origin/joshua
 		A46EB04F257B3E71009A0557 /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
 		A46EB050257B3E71009A0557 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
 		A46EB051257B3E71009A0557 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
@@ -148,6 +217,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+<<<<<<< HEAD
+=======
+		8A76BB44257FAA7900B0248B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A76BB4C257FAA7900B0248B /* SwiftUI.framework in Frameworks */,
+				8A76BB4A257FAA7900B0248B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+>>>>>>> origin/joshua
 		A46EB015257B3E49009A0557 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +253,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		A46EB00F257B3E49009A0557 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +261,36 @@
 				A46EB01A257B3E49009A0557 /* grocermi */,
 				A46EB031257B3E4B009A0557 /* grocermiTests */,
 				A46EB03C257B3E4B009A0557 /* grocermiUITests */,
+=======
+		8A76BB48257FAA7900B0248B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A76BB49257FAA7900B0248B /* WidgetKit.framework */,
+				8A76BB4B257FAA7900B0248B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A76BB4D257FAA7900B0248B /* GrocermiWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8A76BB4E257FAA7900B0248B /* GrocermiWidgetExtension.swift */,
+				8A76BB50257FAA7900B0248B /* GrocermiWidgetExtension.intentdefinition */,
+				8A76BB51257FAA7D00B0248B /* Assets.xcassets */,
+				8A76BB53257FAA7D00B0248B /* Info.plist */,
+			);
+			path = GrocermiWidgetExtension;
+			sourceTree = "<group>";
+		};
+		A46EB00F257B3E49009A0557 = {
+			isa = PBXGroup;
+			children = (
+				8A76BB76257FAB6600B0248B /* GrocermiWidgetExtensionExtension.entitlements */,
+				A4EE108D257B4281009257BB /* README.md */,
+				A46EB01A257B3E49009A0557 /* grocermi */,
+				8A76BB4D257FAA7900B0248B /* GrocermiWidgetExtension */,
+				8A76BB48257FAA7900B0248B /* Frameworks */,
+>>>>>>> origin/joshua
 				A46EB019257B3E49009A0557 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +301,10 @@
 				A46EB018257B3E49009A0557 /* grocermi.app */,
 				A46EB02E257B3E4B009A0557 /* grocermiTests.xctest */,
 				A46EB039257B3E4B009A0557 /* grocermiUITests.xctest */,
+<<<<<<< HEAD
+=======
+				8A76BB47257FAA7900B0248B /* GrocermiWidgetExtensionExtension.appex */,
+>>>>>>> origin/joshua
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,10 +312,22 @@
 		A46EB01A257B3E49009A0557 /* grocermi */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				A46EB01B257B3E49009A0557 /* AppDelegate.swift */,
 				A46EB01D257B3E49009A0557 /* SceneDelegate.swift */,
 				A46EB01F257B3E49009A0557 /* ViewController.swift */,
 				A46EB021257B3E49009A0557 /* Main.storyboard */,
+=======
+				8A76BB61257FAAB900B0248B /* grocermi.entitlements */,
+				A46EB01B257B3E49009A0557 /* AppDelegate.swift */,
+				A46EB01D257B3E49009A0557 /* SceneDelegate.swift */,
+				A46EB021257B3E49009A0557 /* Main.storyboard */,
+				8A76BB3E257FA9E600B0248B /* DetailsViewController.swift */,
+				A46EB01F257B3E49009A0557 /* HomeViewController.swift */,
+				8A76BB2F257FA99500B0248B /* AddObjectFromHomeViewController.swift */,
+				8A76BB39257FA9C800B0248B /* AddObjectFromShoppingViewController.swift */,
+				8A76BB34257FA99E00B0248B /* ShoppingListViewController.swift */,
+>>>>>>> origin/joshua
 				A46EB024257B3E4B009A0557 /* Assets.xcassets */,
 				A46EB026257B3E4B009A0557 /* LaunchScreen.storyboard */,
 				A46EB029257B3E4B009A0557 /* Info.plist */,
@@ -208,6 +336,7 @@
 			path = grocermi;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		A46EB031257B3E4B009A0557 /* grocermiTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +355,8 @@
 			path = grocermiUITests;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> origin/joshua
 		A46EB04E257B3E71009A0557 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +414,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
+=======
+		8A76BB46257FAA7900B0248B /* GrocermiWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A76BB59257FAA7D00B0248B /* Build configuration list for PBXNativeTarget "GrocermiWidgetExtensionExtension" */;
+			buildPhases = (
+				8A76BB43257FAA7900B0248B /* Sources */,
+				8A76BB44257FAA7900B0248B /* Frameworks */,
+				8A76BB45257FAA7900B0248B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrocermiWidgetExtensionExtension;
+			productName = GrocermiWidgetExtensionExtension;
+			productReference = 8A76BB47257FAA7900B0248B /* GrocermiWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+>>>>>>> origin/joshua
 		A46EB017257B3E49009A0557 /* grocermi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A46EB042257B3E4B009A0557 /* Build configuration list for PBXNativeTarget "grocermi" */;
@@ -290,10 +441,18 @@
 				A46EB014257B3E49009A0557 /* Sources */,
 				A46EB015257B3E49009A0557 /* Frameworks */,
 				A46EB016257B3E49009A0557 /* Resources */,
+<<<<<<< HEAD
+=======
+				8A76BB5C257FAA7D00B0248B /* Embed App Extensions */,
+>>>>>>> origin/joshua
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
+=======
+				8A76BB57257FAA7D00B0248B /* PBXTargetDependency */,
+>>>>>>> origin/joshua
 			);
 			name = grocermi;
 			productName = grocermi;
@@ -342,9 +501,18 @@
 		A46EB010257B3E49009A0557 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+<<<<<<< HEAD
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+=======
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8A76BB46257FAA7900B0248B = {
+						CreatedOnToolsVersion = 12.3;
+					};
+>>>>>>> origin/joshua
 					A46EB017257B3E49009A0557 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -374,11 +542,26 @@
 				A46EB017257B3E49009A0557 /* grocermi */,
 				A46EB02D257B3E4B009A0557 /* grocermiTests */,
 				A46EB038257B3E4B009A0557 /* grocermiUITests */,
+<<<<<<< HEAD
+=======
+				8A76BB46257FAA7900B0248B /* GrocermiWidgetExtensionExtension */,
+>>>>>>> origin/joshua
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< HEAD
+=======
+		8A76BB45257FAA7900B0248B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A76BB52257FAA7D00B0248B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+>>>>>>> origin/joshua
 		A46EB016257B3E49009A0557 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,13 +637,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
+=======
+		8A76BB43257FAA7900B0248B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A76BB54257FAA7D00B0248B /* GrocermiWidgetExtension.intentdefinition in Sources */,
+				8A76BB4F257FAA7900B0248B /* GrocermiWidgetExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+>>>>>>> origin/joshua
 		A46EB014257B3E49009A0557 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				A46EB020257B3E49009A0557 /* ViewController.swift in Sources */,
 				A46EB01C257B3E49009A0557 /* AppDelegate.swift in Sources */,
 				A46EB01E257B3E49009A0557 /* SceneDelegate.swift in Sources */,
+=======
+				A46EB020257B3E49009A0557 /* HomeViewController.swift in Sources */,
+				A46EB01C257B3E49009A0557 /* AppDelegate.swift in Sources */,
+				8A76BB55257FAA7D00B0248B /* GrocermiWidgetExtension.intentdefinition in Sources */,
+				8A76BB35257FA99E00B0248B /* ShoppingListViewController.swift in Sources */,
+				A46EB01E257B3E49009A0557 /* SceneDelegate.swift in Sources */,
+				8A76BB3F257FA9E600B0248B /* DetailsViewController.swift in Sources */,
+				8A76BB30257FA99500B0248B /* AddObjectFromHomeViewController.swift in Sources */,
+				8A76BB3A257FA9C800B0248B /* AddObjectFromShoppingViewController.swift in Sources */,
+>>>>>>> origin/joshua
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +674,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				A46EB033257B3E4B009A0557 /* grocermiTests.swift in Sources */,
+=======
+>>>>>>> origin/joshua
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,13 +685,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				A46EB03E257B3E4B009A0557 /* grocermiUITests.swift in Sources */,
+=======
+>>>>>>> origin/joshua
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+<<<<<<< HEAD
+=======
+		8A76BB57257FAA7D00B0248B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A76BB46257FAA7900B0248B /* GrocermiWidgetExtensionExtension */;
+			targetProxy = 8A76BB56257FAA7D00B0248B /* PBXContainerItemProxy */;
+		};
+>>>>>>> origin/joshua
 		A46EB030257B3E4B009A0557 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A46EB017257B3E49009A0557 /* grocermi */;
@@ -515,6 +735,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
+=======
+		8A76BB5A257FAA7D00B0248B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GrocermiWidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A8NT6G2XM;
+				INFOPLIST_FILE = GrocermiWidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.grocermi.GrocermiWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A76BB5B257FAA7D00B0248B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GrocermiWidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A8NT6G2XM;
+				INFOPLIST_FILE = GrocermiWidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiftinsg.grocermi.GrocermiWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+>>>>>>> origin/joshua
 		A46EB040257B3E4B009A0557 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -634,10 +903,21 @@
 		A46EB043257B3E4B009A0557 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+<<<<<<< HEAD
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = grocermi/Info.plist;
+=======
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = grocermi/grocermi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A8NT6G2XM;
+				INFOPLIST_FILE = grocermi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+>>>>>>> origin/joshua
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,10 +932,21 @@
 		A46EB044257B3E4B009A0557 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+<<<<<<< HEAD
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = grocermi/Info.plist;
+=======
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = grocermi/grocermi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A8NT6G2XM;
+				INFOPLIST_FILE = grocermi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+>>>>>>> origin/joshua
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -750,6 +1041,18 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
+=======
+		8A76BB59257FAA7D00B0248B /* Build configuration list for PBXNativeTarget "GrocermiWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A76BB5A257FAA7D00B0248B /* Debug */,
+				8A76BB5B257FAA7D00B0248B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+>>>>>>> origin/joshua
 		A46EB013257B3E49009A0557 /* Build configuration list for PBXProject "grocermi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
