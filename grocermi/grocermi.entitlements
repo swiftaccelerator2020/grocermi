@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.org.swiftinsg.grocermi</string>
+		<string>group.org.swiftinsg.grocermiupdate</string>
 	</array>
 </dict>
 </plist>
