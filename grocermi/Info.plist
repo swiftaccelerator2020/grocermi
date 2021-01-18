@@ -17,13 +17,15 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Gimme PLZZZZ</string>
+	<string>This app requires your photos to insert images for your items</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Photos Plz</string>
+	<string>This app requires your photos to insert images for your items</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app requires your photos to insert images for your items</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -53,6 +55,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<false/>
+	<key>UIStatusBarHidden</key>
+	<false/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

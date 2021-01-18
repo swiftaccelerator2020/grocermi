@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "images for app.001.jpeg",
+      "filename" : "Images.001.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Images.001-1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Images.001-2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

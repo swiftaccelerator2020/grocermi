@@ -22,22 +22,29 @@ class ShoppingListViewController: UIViewController, UITableViewDelegate, UITable
         tableView.delegate = self
         tableView.dataSource = self
         
-        if let loadedGroceries = Grocery.loadFromFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = Grocery.loadFromFile(){
+            if !loadedGroceries.isEmpty {
                 arrayOfItems = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 arrayOfItems = Grocery.loadSampleData()
-                print("sample data is \(Grocery.loadSampleData())")
             }
+        } else {
+            arrayOfItems = Grocery.loadSampleData()
+        }
 
         print(arrayOfItems)
         
-        if let category = CategoriesAndGroceries.loadFromCategoryFile() {
-            categories = category
-        } else {
-            categories = CategoriesAndGroceries.loadSampleCategoryData()
-        }
+        if let loadedCategories = CategoriesAndGroceries.loadFromCategoryFile() {
+                if loadedCategories.isEmpty {
+                    print("Found file! Loading friends!")
+                    categories = loadedCategories
+                } else {
+                    categories = CategoriesAndGroceries.loadSampleCategoryData()
+                }
+            } else {
+                print("No Categories 😢 Making some up")
+                categories = CategoriesAndGroceries.loadSampleCategoryData()
+            }
         
         tableView.reloadData()
 

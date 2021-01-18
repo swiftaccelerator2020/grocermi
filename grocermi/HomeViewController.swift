@@ -7,12 +7,14 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource, UITabBarDelegate {
+class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource, UITabBarDelegate, UISearchBarDelegate {
     
     var refreshControl = UIRefreshControl()
     var arrayOfItems:[Grocery] = []
     var categories:[String] = []
         
+    @IBOutlet weak var filterSearchBar: UISearchBar!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count + 1
     }
@@ -72,14 +74,15 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
                 categories = CategoriesAndGroceries.loadSampleCategoryData()
             }
         
-        if let loadedGroceries = Grocery.loadFromFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = Grocery.loadFromFile(){
+            if !loadedGroceries.isEmpty {
                 arrayOfItems = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 arrayOfItems = Grocery.loadSampleData()
-                print("sample data is \(Grocery.loadSampleData())")
             }
+        } else {
+            arrayOfItems = Grocery.loadSampleData()
+        }
         
         print("ViewWillAppear Ran")
         
@@ -94,23 +97,29 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         tableView.delegate = self
         tableView.dataSource = self
         
+        filterSearchBar.delegate = self
+        
         if let loadedCategories = CategoriesAndGroceries.loadFromCategoryFile() {
-                print("Found file! Loading friends!")
-                categories = loadedCategories
+                if loadedCategories.isEmpty {
+                    print("Found file! Loading friends!")
+                    categories = loadedCategories
+                } else {
+                    categories = CategoriesAndGroceries.loadSampleCategoryData()
+                }
             } else {
                 print("No Categories 😢 Making some up")
                 categories = CategoriesAndGroceries.loadSampleCategoryData()
             }
         
-        if let loadedGroceries = Grocery.loadFromFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = Grocery.loadFromFile(){
+            if !loadedGroceries.isEmpty {
                 arrayOfItems = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 arrayOfItems = Grocery.loadSampleData()
-                print("sample data is \(Grocery.loadSampleData())")
             }
-            
+        } else {
+            arrayOfItems = Grocery.loadSampleData()
+        }
         
         print(arrayOfItems)
         
@@ -147,10 +156,25 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         
         Grocery.saveToFile(groceries: arrayOfItems)
             
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
             
         tableView.reloadData()
                 
     }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+
     
     @IBAction func addObject(_ sender: Any) {
         
@@ -164,21 +188,26 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate & UI
         
         print("Unwound")
         if let loadedCategories = CategoriesAndGroceries.loadFromCategoryFile() {
-                print("Found file! Loading friends!")
-                categories = loadedCategories
+                if loadedCategories.isEmpty {
+                    print("Found file! Loading friends!")
+                    categories = loadedCategories
+                } else {
+                    categories = CategoriesAndGroceries.loadSampleCategoryData()
+                }
             } else {
                 print("No Categories 😢 Making some up")
                 categories = CategoriesAndGroceries.loadSampleCategoryData()
             }
         
-        if let loadedGroceries = Grocery.loadFromFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = Grocery.loadFromFile(){
+            if !loadedGroceries.isEmpty {
                 arrayOfItems = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 arrayOfItems = Grocery.loadSampleData()
-                print("sample data is \(Grocery.loadSampleData())")
             }
+        } else {
+            arrayOfItems = Grocery.loadSampleData()
+        }
                 
         for i in 0...arrayOfItems.count - 1 {
             if arrayOfItems[i].alerts == true {

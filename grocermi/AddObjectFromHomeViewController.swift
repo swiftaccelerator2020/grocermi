@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddObjectFromHomeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddObjectFromHomeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
@@ -30,36 +30,62 @@ class AddObjectFromHomeViewController: UIViewController, UIImagePickerController
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+        
         imageView.isUserInteractionEnabled = true
+        
+        nameTextField.delegate = self
+        existingStockNumber.delegate = self
         
         // Do any additional setup after loading the view.
         
-        if let loadedGroceries = Grocery.loadFromFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = Grocery.loadFromFile(){
+            if !loadedGroceries.isEmpty {
                 arrayOfItems = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 arrayOfItems = Grocery.loadSampleData()
-                print("sample data is \(Grocery.loadSampleData())")
             }
+        } else {
+            arrayOfItems = Grocery.loadSampleData()
+        }
 
         print(arrayOfItems)
         
-        if let loadedGroceries = CategoriesAndGroceries.loadFromGroceryFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = CategoriesAndGroceries.loadFromGroceryFile(){
+            if loadedGroceries.isEmpty {
                 groceries = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 groceries = CategoriesAndGroceries.loadSampleGroceryData()
             }
+        } else {
+            groceries = CategoriesAndGroceries.loadSampleGroceryData()
+        }
         
         if let loadedCategories = CategoriesAndGroceries.loadFromCategoryFile() {
-                print("Found file! Loading friends!")
-                categories = loadedCategories
+                if loadedCategories.isEmpty {
+                    print("Found file! Loading friends!")
+                    categories = loadedCategories
+                } else {
+                    categories = CategoriesAndGroceries.loadSampleCategoryData()
+                }
             } else {
                 print("No Categories 😢 Making some up")
                 categories = CategoriesAndGroceries.loadSampleCategoryData()
             }
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
     }
     
     @IBAction func imagePressed(_ sender: Any) {
@@ -201,39 +227,52 @@ class AddObjectFromHomeViewController: UIViewController, UIImagePickerController
     @IBAction func groceryButtonPressed(_ sender: Any) {
         let alert = UIAlertController(title: "Preset Grocery", message: "Please Select an Grocery", preferredStyle: .actionSheet)
         
-        for i in 0...(groceries.count - 1) {
-            alert.addAction(UIAlertAction(title: groceries[i], style: .default, handler: { (_) in
-                self.presetButton.setTitle(self.groceries[i], for: .normal)
-                self.selectedGrocery = self.groceries[i]
+        if !groceries.isEmpty {
+            for i in 0...(groceries.count - 1) {
+                alert.addAction(UIAlertAction(title: groceries[i], style: .default, handler: { (_) in
+                    self.presetButton.setTitle(self.groceries[i], for: .normal)
+                    self.selectedGrocery = self.groceries[i]
+                }))
+            }
+            
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
+                print("User click Dismiss button")
             }))
+            
+            self.present(alert, animated: true, completion: {
+                print("completion block")
+            })
+        } else {
+            let otherAlert = UIAlertController(title: "No Grocery Found", message: "Go to preferences to add groceries", preferredStyle: .alert)
+            otherAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) in }))
+            self.present(otherAlert, animated: true, completion: {})
         }
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
-            print("User click Dismiss button")
-        }))
-        
-        self.present(alert, animated: true, completion: {
-            print("completion block")
-        })
     }
     
     @IBAction func categoryButtonPressed(_ sender: Any) {
         let alert = UIAlertController(title: "Category", message: "Please Select an Category", preferredStyle: .actionSheet)
         
-        for i in 0...(categories.count - 1) {
-            alert.addAction(UIAlertAction(title: categories[i], style: .default, handler: { (_) in
-                self.categoryButton.setTitle(self.categories[i], for: .normal)
-                self.selectedCategory = self.categories[i]
+        if !categories.isEmpty {
+            for i in 0...(categories.count - 1) {
+                alert.addAction(UIAlertAction(title: categories[i], style: .default, handler: { (_) in
+                    self.categoryButton.setTitle(self.categories[i], for: .normal)
+                    self.selectedCategory = self.categories[i]
+                }))
+            } 
+            
+            
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
+                print("User click Dismiss button")
             }))
+            
+            self.present(alert, animated: true, completion: {
+                print("completion block")
+            })
+        } else {
+            let otherAlert = UIAlertController(title: "No Categories Found", message: "Go to preferences to add categories", preferredStyle: .alert)
+            otherAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) in }))
+            self.present(otherAlert, animated: true, completion: {})
         }
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
-            print("User click Dismiss button")
-        }))
-        
-        self.present(alert, animated: true, completion: {
-            print("completion block")
-        })
     }
     
     /*

@@ -16,30 +16,37 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let loadedGroceries = CategoriesAndGroceries.loadFromGroceryFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = CategoriesAndGroceries.loadFromGroceryFile(){
+            if loadedGroceries.isEmpty {
                 groceries = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 groceries = CategoriesAndGroceries.loadSampleGroceryData()
             }
+        } else {
+            groceries = CategoriesAndGroceries.loadSampleGroceryData()
+        }
         
         if let loadedCategories = CategoriesAndGroceries.loadFromCategoryFile() {
-                print("Found file! Loading friends!")
-                categories = loadedCategories
+                if loadedCategories.isEmpty {
+                    print("Found file! Loading friends!")
+                    categories = loadedCategories
+                } else {
+                    categories = CategoriesAndGroceries.loadSampleCategoryData()
+                }
             } else {
                 print("No Categories 😢 Making some up")
                 categories = CategoriesAndGroceries.loadSampleCategoryData()
             }
         
-        if let loadedGroceries = Grocery.loadFromFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = Grocery.loadFromFile(){
+            if !loadedGroceries.isEmpty {
                 arrayOfItems = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 arrayOfItems = Grocery.loadSampleData()
-                print("sample data is \(Grocery.loadSampleData())")
             }
+        } else {
+            arrayOfItems = Grocery.loadSampleData()
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

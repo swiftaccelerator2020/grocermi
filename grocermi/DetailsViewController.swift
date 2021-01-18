@@ -21,6 +21,7 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
     var categories: [String] = []
     var groceries: [String] = []
     var details: Grocery?
+    var test = 1
     
     var selectedGrocery: String?
     var selectedCategory: String?
@@ -35,6 +36,9 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         if let loadedData = CategoriesAndGroceries.loadFromDetailFile() {
             details = loadedData
         }
+        
+        stockTextField.delegate = self
+        nameTextField.delegate = self
         
         if let details = details {
             
@@ -51,27 +55,58 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
             }
             categoryButton.setTitle(details.groceryCat, for: .normal)
             groceryButton.setTitle(details.grocery, for: .normal)
-        
+            
+            expiryDatePicker.date = details.expiryDate!
         }
         
         if let loadedGroceries = Grocery.loadFromFile(){
-            arrayOfItems = loadedGroceries
+            if !loadedGroceries.isEmpty {
+                arrayOfItems = loadedGroceries
+            } else {
+                arrayOfItems = Grocery.loadSampleData()
+            }
         } else {
             arrayOfItems = Grocery.loadSampleData()
         }
         
         if let loadedGroceries = CategoriesAndGroceries.loadFromGroceryFile(){
-            groceries = loadedGroceries
+            if loadedGroceries.isEmpty {
+                groceries = loadedGroceries
+            } else {
+                groceries = CategoriesAndGroceries.loadSampleGroceryData()
+            }
         } else {
             groceries = CategoriesAndGroceries.loadSampleGroceryData()
         }
         
-        if let loadedCategories = CategoriesAndGroceries.loadFromCategoryFile(){
-            categories = loadedCategories
-        } else {
-            categories = CategoriesAndGroceries.loadSampleCategoryData()
-        }
+        if let loadedCategories = CategoriesAndGroceries.loadFromCategoryFile() {
+                if loadedCategories.isEmpty {
+                    print("Found file! Loading friends!")
+                    categories = loadedCategories
+                } else {
+                    categories = CategoriesAndGroceries.loadSampleCategoryData()
+                }
+            } else {
+                print("No Categories 😢 Making some up")
+                categories = CategoriesAndGroceries.loadSampleCategoryData()
+            }
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
     }
     
     @IBAction func deletePressed(_ sender: Any) {
@@ -105,6 +140,7 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         self.present(alert, animated: true, completion: nil)
     }
+    
     
     func setupToolbar(){
         //Create a toolbar
@@ -220,22 +256,20 @@ class DetailsViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @IBAction func dateChanged(_ sender: Any) {
         for i in 0...arrayOfItems.count - 1 {
+            
+            print("\(arrayOfItems[i].ID)", terminator: ", ")
+            print("\(details!.ID)")
+
+            
             if arrayOfItems[i].ID == details!.ID {
                 arrayOfItems[i].expiryDate = expiryDatePicker.date
                 Grocery.saveToFile(groceries: arrayOfItems)
+                test = i
                 break
             }
         }
-    }
-    
-    @IBAction func alertChanged(_ sender: Any) {
-        for i in 0...arrayOfItems.count - 1 {
-            if arrayOfItems[i].ID == details!.ID {
-                    arrayOfItems[i].alerts = alertSwitch.isOn
-                Grocery.saveToFile(groceries: arrayOfItems)
-                break
-            }
-        }
+        print("date works")
+        Grocery.saveToFile(groceries: arrayOfItems)
     }
     
     @IBAction func imagePressed(_ sender: Any) {

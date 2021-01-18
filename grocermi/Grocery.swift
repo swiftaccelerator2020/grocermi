@@ -36,7 +36,7 @@ class Grocery: Codable  {
     
     static func loadSampleData() -> [Grocery]{
         
-        let sampleGroceries = [Grocery(name: "Test", grocery: "NTUC", existingStock: 10, alerts: false, expiryDate: nil, groceryCat: "Dairy", imageOfItem: nil, ID: "E621E1F8-C36C-495A-93FC-0C247A3E6E5F", isAlert: false)]
+        let sampleGroceries = [Grocery(name: "No Items Found", grocery: "NTUC", existingStock: 10, alerts: false, expiryDate: nil, groceryCat: "Meat", imageOfItem: nil, ID: "E621E1F8-C36C-495A-93FC-0C247A3E6E5F", isAlert: false)]
         
         return sampleGroceries
     }

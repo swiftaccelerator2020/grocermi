@@ -59,14 +59,15 @@ class SelectionTableViewController: UITableViewController {
         
         self.title = selectedCategory
         
-        if let loadedGroceries = Grocery.loadFromFile() {
-                print("Found file! Loading friends!")
+        if let loadedGroceries = Grocery.loadFromFile(){
+            if !loadedGroceries.isEmpty {
                 arrayOfItems = loadedGroceries
             } else {
-                print("No Groceries 😢 Making some up")
                 arrayOfItems = Grocery.loadSampleData()
-                print("sample data is \(Grocery.loadSampleData())")
             }
+        } else {
+            arrayOfItems = Grocery.loadSampleData()
+        }
 
         print(arrayOfItems)
     }

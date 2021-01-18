@@ -25,7 +25,11 @@ class ItemTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
         collectionView.delegate = self
         
         if let loadedGroceries = Grocery.loadFromFile(){
-            arrayOfItems = loadedGroceries
+            if !loadedGroceries.isEmpty {
+                arrayOfItems = loadedGroceries
+            } else {
+                arrayOfItems = Grocery.loadSampleData()
+            }
         } else {
             arrayOfItems = Grocery.loadSampleData()
         }

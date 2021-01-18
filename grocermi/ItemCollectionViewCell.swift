@@ -23,7 +23,11 @@ class ItemCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 10
         
         if let loadedGroceries = Grocery.loadFromFile(){
-            arrayOfItems = loadedGroceries
+            if !loadedGroceries.isEmpty {
+                arrayOfItems = loadedGroceries
+            } else {
+                arrayOfItems = Grocery.loadSampleData()
+            }
         } else {
             arrayOfItems = Grocery.loadSampleData()
         }
@@ -49,17 +53,22 @@ class ItemCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func minusPressed(_ sender: Any) {
+                    
         
-        data?.existingStock -= 1
-        stockLabel.text = String(data!.existingStock)
         
-        for i in 0...arrayOfItems.count - 1 {
-            if arrayOfItems[i].ID == data!.ID {
+        if data!.existingStock > 0 {
+        
+            data?.existingStock -= 1
+            stockLabel.text = String(data!.existingStock)
+            
+            for i in 0...arrayOfItems.count - 1 {
+                if arrayOfItems[i].ID == data!.ID {
                     arrayOfItems[i].existingStock = data!.existingStock
                     print("Stock Changed")
-                
+                }
             }
         }
+
         
         Grocery.saveToFile(groceries: arrayOfItems)
         
