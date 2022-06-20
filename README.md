@@ -2,4 +2,4 @@
 
 <h1>Big Grocery App for big men
   
-![Group Photo](https://media.discordapp.net/attachments/723702378842292296/784601784479383573/SadFamily.png)
+![Group Photo](https://cdn.discordapp.com/attachments/795616479697436693/795898110852333609/image0.jpg)
